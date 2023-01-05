@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="project2.js" defer></script>
+	<link href="styles.css" type="text/css" rel="stylesheet">
+	<title>HomePage</title>
+</head>
+<body id="homepage" onload="loadImages();">
+	<div id="flex">
+		<img src="Images/logo2.png" id="home-logo">
+		<form id="searchbar" onsubmit="filmsearch();return false;">
+			<input type="text" id="search" placeholder="Search for a movie..." size="80">
+			<br>
+			<div id="result-options">
+				<input type="radio" id="Text-result" class="radio-btns" name="result_type" value="Text">
+				<label for="Text-result" class="Label">Text</label>
+				<input type="radio" id="Images-result" class="radio-btns" name="result_type" value="Images">
+				<label for="Images-result" class="Label">Images</label>
+			</div>
+			<input type="submit" hidden id="submit" value="Search">
+		</form>
+		<div id="suggestion-btns">
+			<button type="submit" value="a" onclick="sendId(value);" id="o1">a</button>
+			<button type="submit" value="b" onclick="sendId(value);" id="o2">b</button>
+			<button type="submit" value="c" onclick="sendId(value);" id="o3">c</button>
+			<button type="submit" value="d" onclick="sendId(value);" id="o4">d</button>
+		</div>
+		<h1 id="ptitles">Popular Titles</h1>
+		<div id="poster-scroll">
+			<img class="poster" id="i1">
+			<img class="poster" id="i2">
+			<img class="poster" id="i3">
+			<img class="poster" id="i4">
+			<img class="poster" id="i5">
+			<img class="poster" id="i6">
+			<img class="poster" id="i7">
+			<img class="poster" id="i8">
+			<img class="poster" id="i9">
+			<img class="poster" id="i10">
+			<img class="poster" id="i11">
+			<img class="poster" id="i12">
+			<img class="poster" id="i13">
+			<img class="poster" id="i14">
+			<img class="poster" id="i15">
+			<img class="poster" id="i16">
+			<img class="poster" id="i17">
+			<img class="poster" id="i18">
+			<img class="poster" id="i19">
+			<img class="poster" id="i20">
+		</div>
+	</div>
+</body>
+</html>	

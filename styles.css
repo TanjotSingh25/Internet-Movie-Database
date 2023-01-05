@@ -1,0 +1,637 @@
+#Title_Page
+{
+    background-color: #000000;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+#loading-flex
+{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading-flex2
+{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-img
+{
+    opacity: 0;
+    width: 100%;
+    border-radius: 5px;
+    transition: opacity 5s ease, transform 0.8s ease;
+    margin: 15px;
+}
+
+.i-img:hover
+{
+    opacity: 1;
+    transition: opacity 0.1s ease;
+    transform: scale(1.3);
+}
+
+.flexbox
+{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+
+.Flexboxes
+{
+    display: none;
+    justify-content: space-evenly;
+    height: 100%;
+    position: relative;
+}
+
+.statement
+{
+    color: white;
+    position: absolute;
+    top: 27%;
+    left: 15%;
+}
+
+.statement h1
+{
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    font-size: 80;
+    margin-bottom: 0;
+}
+
+.statement a
+{
+    position: relative;
+    left: 40%;
+    font-size: 25;
+    text-decoration: none;
+    color: white;
+    background-color: goldenrod;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+
+.glow 
+{
+    font-size: calc(20px + 18vh);
+    line-height: calc(20px + 20vh);
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+}
+
+/* HomePage CSS */
+
+#homepage::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+#homepage
+{
+    background-image: url("Images/hbackground2.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#flex
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+#home-logo
+{
+    align-self: center;
+    padding-top: 40px;
+}
+
+#searchbar
+{
+    align-self: center;
+    padding-top: 30px;
+    padding-left: 35px;
+}
+
+#search
+{
+    border: 3px solid black;
+    font-size: 20px;
+    height: 42px;
+    border-radius: 18px;
+}
+
+input[type=text] 
+{
+    padding: 20px 20px;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+
+#ptitles
+{
+    align-self: center;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    color: #ff8d00;
+}
+
+#poster-scroll
+{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    overflow: auto;
+}
+
+#poster-scroll img
+{
+    cursor: pointer;
+}
+
+#poster-scroll::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.poster
+{
+    height: 100%;
+    width: 20%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+#suggestion-btns
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    padding-bottom: 10px;
+}
+
+#suggestion-btns button
+{
+    display: none;
+    width: 18%;
+    line-height: 40px;
+    border-radius: 16px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    cursor: pointer;
+}
+
+#result-options
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+}
+
+.radio-btns
+{
+    width: 2%;
+    padding-left: 40px;
+}
+
+.Label
+{
+    color: white;
+    font-size: 30px;
+    padding-right: 40px;
+    
+}
+
+/* MovieDescription CSS */
+
+#MovieDesBody::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+#MovieDesBody
+{
+    background-color: black;
+    /* background-image: url("Images/background4.jpg"); */
+}
+
+#MovieDesBodyResult
+{
+    display: none;
+}
+
+#navbar
+{
+    background-color: #35383999;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    transition: 0.4s;
+    z-index: 1000;
+}
+
+#logo-small
+{
+    height: 100%;
+}
+
+#logo-box
+{
+    margin: 10px 5px 10px 25px;
+    transition: 0.4s;
+}
+
+#navigation
+{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    justify-content: center;
+    width: 100%;
+}
+
+#navigation a
+{
+    text-decoration: none;
+    color: white;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    font-size: 25px;
+    padding: 0% 2% 0% 2%;
+}
+
+#navigation div
+{
+    padding: 0% 5% 0% 1%;
+}
+
+.socials-grid
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding: 10px 30px 10px 10px;
+}
+
+.socials-grid a img
+{
+    height: 100%;
+}
+
+#Home
+{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto 60px auto auto;
+    margin: 1% 0%;
+    padding: 3% 2% 3% 2%;
+    background-image: linear-gradient(to right, #8b939a87 , #5b646787);
+    border-radius: 25px;
+
+}
+
+#poster-searched
+{
+    grid-row: 1 / 5;
+    grid-column: 2 / 3;
+    width: 100%;
+    box-shadow: 0px 0px 35px black;
+    border-radius: 25px;
+    display: grid;
+    align-self: center;
+}
+
+#title-searched
+{
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    color: goldenrod;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    margin-bottom: 0px;
+}
+
+#rating-searched
+{
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 80%;
+}
+
+#rating-searched img
+{
+    align-self: center;
+    padding: 0px 15px 0px 25px;
+}
+
+#rating-searched p
+{
+    font-size: 30px;
+    margin-top: 10px;
+    display: inline;
+
+}
+
+#plot-searched
+{
+    color: #200031;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 0px;
+    padding: 0px 15px 0px 15px;
+}
+
+#misc-searched
+{
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    font-size: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+#misc-searched td
+{
+    padding: 0px 10px 0px 10px;
+}
+
+#Cast
+{
+    background-color: #DCDCDC87;
+    margin: 1% 0%;
+    padding: 3% 2% 3% 2%;
+    border-radius: 25px;
+}
+
+#Cast-title
+{
+    font-size: 70px;
+    margin: 0%;
+    margin-bottom: 3%;
+    text-align: center;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    color: #030972;
+    text-shadow: 0 0 3px #000000, 0 0 5px #030972;
+}
+
+#Cast-grid
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;  
+}
+
+#Cast-grid div
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#Cast-grid div img
+{
+    border-radius: 16px;
+    width: 90%;
+}
+
+.cast-first-col
+{
+    grid-column: 1 / 2;
+}
+
+.cast-second-col
+{
+    grid-column: 2 / 3;
+}
+
+.cast-third-col
+{
+    grid-column: 3 / 4;
+}
+
+.cast-fourth-col
+{
+    grid-column: 4 / 5;
+}
+
+.caption
+{
+    font-size: 20px;
+    background-color: #0000005b;
+    padding: 2% 0% 2% 0%;
+    margin: 0px 31px 15% 32px;
+    border-radius: 0px 0px 16px 16px;
+    font-weight: bold;
+}
+
+.director
+{
+    background-color: #f90a0a5b;
+}
+
+#Trailer
+{
+    background-image: linear-gradient(to right, #8b939a87 , #5b646787);
+    margin: 1% 0%;
+    padding: 3% 2% 3% 2%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Trailer img
+{
+    height: 90%;
+    width: 90%;   
+    border-radius: 16px; 
+}
+
+#Trailer h1
+{
+    font-size: 70px;
+    margin: 0%;
+    margin-bottom: 3%;
+    text-align: center;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    color: rgb(163, 38, 38);
+    text-shadow: 0 0 3px #000000, 0 0 5px hotpink;
+}
+
+#Similars
+{
+    background-color: #DCDCDC87;
+    margin: 1% 0%;
+    padding: 3% 2% 3% 2%;
+    border-radius: 25px;
+}
+
+#Similars-title
+{
+    font-size: 70px;
+    margin: 0%;
+    margin-bottom: 3%;
+    text-align: center;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    color: purple;
+    text-shadow: 0 0 3px #000000, 0 0 5px hotpink;
+}
+
+#Similars-scroll
+{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+#Similars-scroll a
+{
+    padding: 1%;
+    align-self: center;
+}
+
+
+#Similars-scroll::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.poster2
+{
+    height: 100%;
+    width: 25%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    cursor: pointer;
+    display: none;
+}
+
+#Images-back
+{
+    display: flex;
+    margin: 1% 0%;
+    padding: 3% 2% 3% 2%;
+    background-image: linear-gradient(to right, #8b939a87 , #5b646787);
+    border-radius: 25px;
+    flex-wrap: wrap;
+}
+
+#Images-back img
+{
+    width: 100%;
+    border-radius: 16px;
+    padding-top: 2%;
+}
+
+@-webkit-keyframes blink 
+{
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
+  }
+  
+  @keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+  /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
+  }
+  
+
+@media screen and (max-width: 600px) 
+{
+    .flexbox
+    {
+        display: none;
+    }
+    
+    .statement
+    {
+        position: fixed;
+        top: 25%;
+        left: 0%;
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .statement h3
+    {
+        padding: 0;
+    }
+
+    .statement a
+    {
+        left: 30%;
+    }
+
+}

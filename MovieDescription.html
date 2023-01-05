@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="project2.js" defer></script>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+        <title>Movie Description</title>
+    </head>
+    <body id="MovieDesBody" onload="loadMovie();setTimeout(loading_home, 7000);">
+        <div id="loading-flex2">
+            <img src="Images/loading.gif" id="loading">
+        </div>
+        <div id="MovieDesBodyResult">
+            <div id="navbar">
+                <a href="index.html" id="logo-box"><img src="Images/logo2.png" id="logo-small"></a>
+                <div id="navigation">
+                    <a href="#Home" id="first-item">Home</a>
+                    <a href="#Cast">Cast</a>
+                    <a href="#Trailer">Trailer</a>
+                    <a href="#Similars">Similars</a>
+                    <a href="HomePage.html"><img src="Images/search.png" style="height: 75%;"></a>
+                </div>
+                <div class="socials-grid">
+                    <a href="https://www.instagram.com/tanjot.singh_/"><img src="Images/instagram.png"></a>
+                    <a href="https://github.com/TanjotSingh25"><img src="Images/github.png"></a>
+                    <a href="https://https://twitter.com/Tanjot_Singh25"><img src="Images/twitter.png"></a>
+                    <a href="https://www.linkedin.com/in/tanjot-singh-b907331b4/"><img src="Images/linkedin.png"></a>
+                </div>
+            </div>
+            <div id="Home">
+                <img id="poster-searched" src="Images/bp.jpg">
+                <h1 id="title-searched">Black Panther - Wakanda Forever</h1>
+                <h3 id="rating-searched">
+                    <img src="Images/imdb.png" style="width: 7%;">
+                    <p id="imdb">90%</p>
+                    <img src="Images/rotten_tomato.png" style="width: 5%;">
+                    <p id="rotten-t">4.5</p>
+                    <img src="Images/metacritic.png" style="width: 5%;">
+                    <p id="meta">84%</p>
+                </h3>
+                <p id="plot-searched">Queen Ramonda, Shuri, M'Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T'Challa's death. As the Wakandans strive to embrace their next chapter, the heroes must band together with Nakia and Everett Ross to forge a new path for their beloved kingdom. </p>
+                <div id="misc-searched">
+                    <table>
+                        <tr>
+                            <td>Release Date:</td>
+                            <td id="release-date" style="padding-right: 40px;">25-04-2022</td>
+                            <td>Genre:</td>
+                            <td id="genre">Action, SuperHero, Drama</td>
+                        </tr>
+                        <tr>
+                            <td>Runtime:</td>
+                            <td id="runtime">2 hour 30 minutes</td>
+                            <td>Director:</td>
+                            <td id="director">Christopher Nolan</td>
+                        </tr>
+                        <tr>
+                            <td>Ratings:</td>
+                            <td id="ratings">PG-13</td>
+                            <td>Produced by:</td>
+                            <td id="company">Marvel</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id="Cast">
+                <h1 id="Cast-title">CAST</h1>
+                <div id="Cast-grid">
+                    <div><img src="Images/actor.jpg" id="c0" class="cast-first-col"></div>
+                    <div><img src="Images/actor.jpg" id="c1" class="cast-second-col"></div>
+                    <div><img src="Images/actor.jpg" id="c2" class="cast-third-col"></div>
+                    <div><img src="Images/actor.jpg" id="c3" class="cast-fourth-col"></div>
+                    <div class="caption cast-first-col" id="cap0">Leonardo DiCaprio</div>
+                    <div class="caption cast-second-col" id="cap1">Leonardo DiCaprio</div>
+                    <div class="caption cast-third-col" id="cap2">Leonardo DiCaprio</div>
+                    <div class="caption cast-fourth-col" id="cap3">Leonardo DiCaprio</div>
+                    <div><img src="Images/actor.jpg" id="c4" class="cast-first-col"></div>
+                    <div><img src="Images/actor.jpg" id="c5" class="cast-second-col"></div>
+                    <div><img src="Images/actor.jpg" id="c6" class="cast-third-col"></div>
+                    <div><img src="Images/actor.jpg" id="c7" class="cast-fourth-col"></div>
+                    <div class="caption cast-first-col" id="cap4">Leonardo DiCaprio</div>
+                    <div class="caption cast-second-col" id="cap5">Leonardo DiCaprio</div>
+                    <div class="caption cast-third-col" id="cap6">Leonardo DiCaprio</div>
+                    <div class="caption cast-fourth-col" id="cap7">Leonardo DiCaprio</div>
+                    <div><img src="Images/actor.jpg" id="c8" class="cast-first-col"></div>
+                    <div><img src="Images/actor.jpg" id="c9" class="cast-second-col"></div>
+                    <div><img src="Images/actor.jpg" id="c10" class="cast-third-col"></div>
+                    <div><img src="Images/actor.jpg" id="c11" class="cast-fourth-col"></div>
+                    <div class="caption cast-first-col" id="cap8">Leonardo DiCaprio</div>
+                    <div class="caption cast-second-col" id="cap9">Leonardo DiCaprio</div>
+                    <div class="caption cast-third-col" id="cap10">Leonardo DiCaprio</div>
+                    <div class="caption cast-fourth-col" id="cap11">Leonardo DiCaprio</div>
+                </div>
+            </div>
+            <div id="Trailer">
+                <h1>TRAILER</h1>
+                <a target="_blank" id="video-link" style="text-align: center;" href="https://www.imdb.com/video/imdb/vi2959588889/imdb/embed"><img id="thumbnail" src="https://m.media-amazon.com/images/M/MV5BMTQ1ZmIzOTAtNDcwZi00NDVkLWE4NWItYWNhZGY1MmVlZGU0XkEyXkFqcGdeQWRvb2xpbmhk._V1_.jpg"></a>
+            </div>
+            <div id="Similars">
+                <h1 id="Similars-title">SIMILARS</h1>
+                <div id="Similars-scroll">
+                    <img class="poster2" id="i1" src="Images/bp.jpg">
+                    <img class="poster2" id="i2" src="Images/bp.jpg">
+                    <img class="poster2" id="i3" src="Images/bp.jpg">
+                    <img class="poster2" id="i4" src="Images/bp.jpg">
+                    <img class="poster2" id="i5" src="Images/bp.jpg">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
